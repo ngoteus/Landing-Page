@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+
+header {
+    background-color: #f9003d;
+    height: 60px;
+    display: flex;
+   justify-content: flex-end;
+    
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid white;
+    width: 500px;
+    
+}
+header nav a {
+    font-family: Bebas-neue;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+header .header-flex{
+display: flex;
+justify-content: flex-end;
+align-items: stretch;
+height: 100%;
+}
+
+ /* Fonte do texto */
+@font-face {
+    font-family:Bebas-neue;
+    src: url(../assests/BebasNeue-Regular.ttf);
+}
+
+
+ /* Classes do Layout-grid */
+.layout-grid{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0;
+    border: 2px solid yellow;
+}
