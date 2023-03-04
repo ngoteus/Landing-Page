@@ -1,37 +1,39 @@
             /* Fonte do texto */
-            
+
             @font-face {
                 font-family: OpenSans;
                 src: url(../assests/fonts/static/OpenSans/OpenSans-Regular.ttf);
             }
-            
+
             @font-face {
                 font-family: Bebas-neue;
                 src: url(../assests/fonts/BebasNeue-Regular.ttf)
             }
-            
+
             * {
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
             }
+
             /* header */
-            
+
             header {
                 background-color: #f9003d;
                 height: 60px;
                 display: flex;
                 justify-content: flex-end;
             }
+
             /* NAV */
-            
+
             header nav {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 width: 500px;
             }
-            
+
             header nav a {
                 font-family: Bebas-neue;
                 color: white;
@@ -43,145 +45,142 @@
                 padding: 15px 20px;
                 border-radius: 5px;
             }
-            
+
             header nav a:hover {
                 text-shadow: 2px 2px 10px rgba(249, 0, 61, 0.3);
                 background-color: white;
                 color: #f9003d;
             }
-            
+
             header .header-flex {
                 display: flex;
                 justify-content: flex-end;
                 align-items: stretch;
                 height: 100%;
             }
+
             /* Classes do Layout-grid */
-            
+
             .layout-grid {
                 width: 80%;
                 max-width: 1200px;
                 margin: 0 auto;
             }
+
             /* MAIN */
-            
+
             #content .banner {
-                width: 100%;
                 height: 740px;
                 background-image: url(../assests/images/imagem-fundo-banner.png);
                 background-repeat: no-repeat;
                 background-size: cover;
+                background-position: bottom;
+                display: flex;
+                align-items: center;
+
+
             }
+
+            #content .banner .banner-content {
+                padding-top: 200px;
+                padding-bottom: 62px;
+                width: 48%;
+            }
+
             /* Banner */
-            
-            #content .banner h1 {
+
+            #content .banner .banner-content h1 {
                 color: white;
                 font-family: "Bebas-neue";
                 font-size: 96px;
-                width: 50%;
-                display: flex;
-                padding-top: 226px;
-                padding-left: 121px;
-                padding-right: 774px;
-                padding-bottom: 284px;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+
             }
-            
-            #content .banner p {
+
+            #content .banner .banner-content .senai {
                 color: #f9003d;
                 font-family: "Courier New";
                 font-size: 53px;
-                width: 554px;
-                height: 68px;
+                text-transform: uppercase;
                 font-weight: bold;
-                display: flex;
-                padding-top: 501px;
-                padding-left: 120px;
-                padding-right: 776px;
-                padding-bottom: 171px;
+                ;
             }
+
             /* Linha no article */
-            
-            #content .banner hr {
+
+            #content .banner .banner-content hr {
                 border: 1px solid #ffaf00;
                 width: 545px;
-                position: absolute;
-                top: 532px;
-                left: 121px;
+                margin: 20px 0px;
             }
+
             /* Imagem Mouse */
-            
-            #content .banner img {
-                width: 38px;
-                height: 80px;
-                position: absolute;
-                top: 658px;
-                left: 121px;
+
+            #content .banner .banner-content img {
+                margin-top: 10px;
             }
-            
+
             #content .sobre {
                 width: 100%;
                 height: 1000px;
                 background-color: #080324;
             }
-            
+
             #content .sobre h2 {
+                margin-bottom: 50px;
                 font-family: "Bebas-Neue";
                 color: #f9003d;
                 font-size: 64px;
-                position: absolute;
-                left: 120px;
-                top: 864px;
             }
-            
-            #content .sobre .paragráfos .Participantes {
+
+            #content .sobre .sobre-article {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #content .sobre .sobre-article .paragráfos {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 50%;
+                color: #FFF;
+            }
+
+
+
+            #content .sobre .sobre-article .paragráfos .Participantes {
                 font-family: "Courier New";
                 font-size: 24px;
-                width: 288px;
-                height: 34px;
                 font-weight: bold;
-                position: absolute;
-                top: 1005px;
-                left: 728px;
-                color: white;
+                text-transform: uppercase;
             }
-            
-            #content .sobre .paragráfos .Alunos {
+
+            #content .sobre .sobre-article .paragráfos .Alunos {
                 font-family: "Bebas-Neue";
                 font-size: 64px;
-                width: 557px;
-                height: 154px;
-                position: absolute;
-                top: 1057px;
-                left: 728px;
                 color: #ffaf00;
             }
-            
+
             #content .sobre .paragráfos .lorem {
                 font-family: "OpenSans";
                 font-size: 18px;
-                width: 592px;
-                height: 252px;
-                position: absolute;
-                top: 1229px;
-                left: 728px;
-                color: white;
+
             }
-            
+
             #content .sobre img {
                 width: 491px;
                 height: 476px;
-                position: absolute;
-                top: 1005px;
-                left: 120px;
+
             }
-            
+
             #content .informacoes {
-                width: 1440px;
                 height: 200px;
                 background-image: url(../assests/images/imagem-fundo-info.png);
-                background-repeat: no-repeat;
+                display: flex;
+                align-items: center;
             }
-            
+
             #content .informacoes img {
                 width: 100%;
                 height: 193px;
@@ -189,53 +188,32 @@
                 top: 1607px;
                 left: 0px;
             }
-            
-            #content .informacoes .Local {
-                font-family: "Courier New";
-                font-size: 24px;
-                width: 288px;
-                height: 34px;
-                position: absolute;
-                top: 1635px;
-                left: 120px;
-                color: white;
-                font-weight: bold;
+
+            #content .informacoes .infoflex {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
             }
-            
-            #content .informacoes .duracao {
-                font-family: "Courier New";
+
+            #content .informacoes .info-item .info-title {
+                font-family: 'Courier New', Courier, monospace;
                 font-size: 24px;
-                width: 288px;
-                height: 34px;
-                position: absolute;
-                top: 1635px;
-                left: 576px;
                 font-weight: bold;
-                color: white;
+                text-transform: uppercase;
+                color: #FFF;
+                margin-bottom: 15px;
             }
-            
-            #content .informacoes .Desafios {
-                font-family: "Courier New";
-                font-size: 24px;
-                width: 288px;
-                height: 34px;
-                position: absolute;
-                top: 1633px;
-                left: 1031px;
-                font-weight: bold;
-                color: white;
-            }
-            
-            #content .informacoes .sp {
-                font-family: "Courier New";
-                font-size: 28px;
-                width: 290px;
-                height: 100px;
+
+            #content .informacoes .info-item .info-box {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                text-transform: uppercase;
-                border: 1px solid #a259f7;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 28px;
                 font-weight: bold;
-                color: #a259f7;
+                text-transform: uppercase;
+                width: 290px;
+                height: 100px;
+                border: 1px solid #A259F7;
+                color: #A259F7;
             }
