@@ -189,7 +189,7 @@
                 left: 0px;
             }
 
-            #content .informacoes .infoflex {
+            #content .informacoes .info-flex {
                 display: flex;
                 justify-content: space-between;
                 width: 100%;
@@ -217,3 +217,60 @@
                 border: 1px solid #A259F7;
                 color: #A259F7;
             }
+
+            #content .Endereço {
+                background-image: url(../assests/images/imagem-fundo-endereco.png);
+                 width: 100%;
+                 height: 598px;
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: center;
+                 align-items: center;
+
+            }
+
+            #content .Endereço .Endereço-titulo {
+                font-family: "Bebas-Neue";
+                font-size: 64px;
+                color: #ffaf00;
+                text-transform: uppercase;
+                font-weight: 400;
+                margin-bottom: 10px;
+            }
+
+            #content .Endereço .Endereço-juntos {
+                display: flex;
+                position: relative;
+                width: 900px;
+                height: 56px;
+                background-color: #010010;
+                border: 2px solid #340b65;
+            }
+
+            #content .Endereço .endereço-texto {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 24px;
+                font-weight: 24px;
+                color: #A259F7;
+                width: 445px;
+            }
+
+            #content .Endereço img {
+                
+            }
+
+
+
+            /* MEDIAS QUERIES */
+            /* tablets >= 768px até 992px */
+            @media screen and (max-width: 991px){
+                
+            }
+
+
+            /* Celulares >=0 até 767px*/
+            @media screen and (max-width: 991px){
+                
+            }
+
+
