@@ -241,8 +241,9 @@
             #content .Endereço .Endereço-juntos {
                 display: flex;
                 position: relative;
+                padding: 56px 56px 56px 56px;
                 width: 900px;
-                height: 56px;
+                /* height: 56px; */
                 background-color: #010010;
                 border: 2px solid #340b65;
             }
@@ -252,12 +253,29 @@
                 font-size: 24px;
                 font-weight: 24px;
                 color: #A259F7;
-                width: 445px;
+                width: 55%;
             }
 
             #content .Endereço img {
-                
+                position: absolute;
+                right: 25px;
+                bottom: 25px;
             }
+            
+
+        #content .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f9003d;
+            padding: 28px 0;
+        }
+
+        #content .footer-paragrafo {
+            font-family: "OpenSans";
+            font-size: 18px;
+            color: #FFF;
+        }    
 
 
 
