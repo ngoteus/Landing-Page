@@ -320,4 +320,21 @@
                 border-left: 2px dotted #ffffff;
             }
 
+            main .banner-flex {
+                justify-content: center;
+                align-items: flex-start;
+                padding-top: 80px;
+            }
+            main .banner-flex h1 {
+                font-size: 40px;
+                text-align: justify;
+                max-width: 260px;
+            }
+            main .banner-flex #banner-infobox {
+                max-width: 355px;
+            }
+            main .banner-flex #banner-infobox img {
+                display: none;
+            }
+
             }
