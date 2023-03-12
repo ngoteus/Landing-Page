@@ -14,12 +14,13 @@
         <div class="layout-grid header-flex">
 
 
-            <nav>
+            <nav id="navmenu">
                 <a href="">Início</a>
                 <a href="">Sobre</a>
                 <a href="">Desafios</a>
                 <a href="">Endereço</a>
             </nav>
+            <img src="./assests/icons/menu_FILL0_wght400_GRAD0_opsz48.svg" id="menu-mobile" alt="Abre o menu mobile" onclick="mostrarMenu()" >
         </div>
     </header>
 
@@ -89,13 +90,13 @@
         </section>
         <section class="Endereço">
             <div class="layout-grid">
-             <h2 class="Endereço-titulo">Endereço</h2>
-             <div class="Endereço-juntos">
-                <p class="endereço-texto">Alameda Barão de Limeira, 539 
-                    Santa Cecilia, São Paulo - SP
-                    CEP: 01202-001</p>
-                <img src="./assests/images/mapa.png" alt="Mapa do google">
-            </div>
+                <h2 class="Endereço-titulo">Endereço</h2>
+                <div class="Endereço-juntos">
+                    <p class="endereço-texto">Alameda Barão de Limeira, 539
+                        Santa Cecilia, São Paulo - SP
+                        CEP: 01202-001</p>
+                    <img src="./assests/images/mapa.png" alt="Mapa do google">
+                </div>
 
             </div>
 
@@ -103,20 +104,25 @@
 
         </section>
         <footer>
-        <section class="footer">
-            <div class="layout-grid">
-                <p class="footer-paragrafo">
-                    Copyright © 2020 - Escola Senai de Informática
-                </p>
+            <section class="footer">
+                <div class="layout-grid">
+                    <p class="footer-paragrafo">
+                        Copyright © 2020 - Escola Senai de Informática
+                    </p>
 
-            </div>
-        </section>
-    </footer>
+                </div>
+            </section>
+        </footer>
     </main>
     
 
-    
+
+    <script> function mostrarMenu() {
+        document.getElementById("navmenu").classList.toggle("mostrarMenu")
+    } 
+    </script>
     <script src="./js/script.js"></script>
+
 </body>
 
 </html>

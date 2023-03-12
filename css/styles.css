@@ -58,6 +58,9 @@
                 align-items: stretch;
                 height: 100%;
             }
+            header #menu-mobile {
+                display: none;
+            }
 
             /* Classes do Layout-grid */
 
@@ -220,12 +223,12 @@
 
             #content .Endereço {
                 background-image: url(../assests/images/imagem-fundo-endereco.png);
-                 width: 100%;
-                 height: 598px;
-                 display: flex;
-                 flex-direction: column;
-                 justify-content: center;
-                 align-items: center;
+                width: 100%;
+                height: 598px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
 
             }
 
@@ -261,34 +264,60 @@
                 right: 25px;
                 bottom: 25px;
             }
-            
 
-        #content .footer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f9003d;
-            padding: 28px 0;
-        }
 
-        #content .footer-paragrafo {
-            font-family: "OpenSans";
-            font-size: 18px;
-            color: #FFF;
-        }    
+            #content .footer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #f9003d;
+                padding: 28px 0;
+            }
+
+            #content .footer-paragrafo {
+                font-family: "OpenSans";
+                font-size: 18px;
+                color: #FFF;
+            }
 
 
 
             /* MEDIAS QUERIES */
             /* tablets >= 768px até 992px */
-            @media screen and (max-width: 991px){
+            @media screen and (max-width: 991px) {
                 
             }
 
 
             /* Celulares >=0 até 767px*/
-            @media screen and (max-width: 991px){
-                
+            @media screen and (max-width: 991px) {
+            
+
+            .mostrarMenu {
+                left: 0;
+                opacity: 1;
             }
 
+            header #menu-mobile {
+                display: block;
+            }
 
+            header nav {
+                position: fixed;
+                top: 60px;
+                left: -80vw;
+                width: 80vw; /* viewport width */
+                height: calc(100vh - 60px);/* viewport height */
+                flex-direction: column;
+                justify-content: space-evenly;
+                background-color: #F9003D;
+                opacity: 0;
+        
+                transition: left 0.4s, opacity 0.6s;
+            }
+        
+            header nav a {
+                border-left: 2px dotted #ffffff;
+            }
+
+            }
